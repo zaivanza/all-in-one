@@ -32,9 +32,6 @@ def debank_tokens(address, headers):
                 cprint(f'довыебывался : {error}', 'red')
                 sleeping(60, 60)
 
-        with open("main_papka/test.json", "w") as file:
-            json.dump(result, file, indent=4, ensure_ascii=False)
-
         return result
 
     except Exception as error:
@@ -168,7 +165,7 @@ def checker_main(func, MIN_TABLE_AMOUNT):
 
     total_balance = []
 
-    file = open('main_papka/debank.txt', 'w')
+    file = open('debank.txt', 'w')
 
     for key in KEYS_LIST:
 

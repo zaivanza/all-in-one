@@ -1,8 +1,6 @@
-from symtable import SymbolTableFactory
 import time
 import json
 import ccxt
-from multiprocessing.dummy import Pool
 from ccxt.base.errors import InvalidAddress, InvalidOrder, ExchangeError
 from termcolor import cprint
 from web3 import Web3

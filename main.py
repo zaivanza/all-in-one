@@ -123,7 +123,7 @@ if __name__ == "__main__":
             # binance()
 
             
-    # check_balance()
+    check_balance()
     # main()
 
 

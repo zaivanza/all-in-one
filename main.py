@@ -73,8 +73,6 @@ if __name__ == "__main__":
                 # AMOUNT_TO_BRIDGE = 10
                 MIN_BALANCE = round(random.uniform(0.025, 0.035), 6) # останется токенов на балансе после бриджа
 
-                bridge_from_eth_to_arbi(privatekey, AMOUNT_TO_BRIDGE, MIN_BALANCE)
-
             def transfer_tokens():
 
                 # ETH | OPTIMISM | BNB | MATIC | FTM | ARBITRUM | NOVA | AVAXC

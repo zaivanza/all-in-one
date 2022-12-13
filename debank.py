@@ -169,10 +169,10 @@ def checker_main(func, MIN_TABLE_AMOUNT):
 
     for key in KEYS_LIST:
 
-        if len(key) > 50:
+        try:
             web3 = Web3(Web3.HTTPProvider('https://rpc.ankr.com/eth'))
             address = web3.eth.account.privateKeyToAccount(key).address
-        else: 
+        except: 
             address = key
 
         headers = {

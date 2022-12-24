@@ -59,3 +59,4 @@ Checker :
 
 Скрипт очень функционален и идеально подходит для работы с фермой мультов. I'm = админ паблика https://t.me/hodlmodeth, отправитель редких гемов в [ [ chat ] ](http://t.me/chathodlmodeth) и главный, но не самый умный кодер чата [ [ code ] ](https://t.me/code_hodlmodeth). Все вопросы по кодингу туда.
 
+Donate (eth / bsc / arbitrum / op) : 0xb7415DB78c886c67DBfB25D3Eb7fcd496dAf9021

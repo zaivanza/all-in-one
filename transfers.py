@@ -19,7 +19,7 @@ def transfer_token(privatekey, amount_to_transfer, to_address, chain_id, scan, r
         token_contract = web3.eth.contract(address=Web3.toChecksumAddress(address_contract), abi=ERC20_ABI)
         account = web3.eth.account.privateKeyToAccount(privatekey)
         address = account.address
-        nonce = web3.eth.getTransactionCount(address)
+        nonce = web3.eth.get_transaction_count(address)
 
         symbol = token_contract.functions.symbol().call()
         token_decimal = token_contract.functions.decimals().call()
@@ -58,7 +58,7 @@ def transfer_eth(privatekey, amount_to_transfer, to_address, chain_id, scan, rpc
 
         account = web3.eth.account.privateKeyToAccount(privatekey)
         address = account.address
-        nonce = web3.eth.getTransactionCount(address)
+        nonce = web3.eth.get_transaction_count(address)
 
         amount = intToDecimal(amount_to_transfer, 18) 
 
